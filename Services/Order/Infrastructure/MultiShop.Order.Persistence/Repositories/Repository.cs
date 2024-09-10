@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Migrations;
 using MultiShop.Order.Application.Interfaces;
 using MultiShop.Order.Persistence.Context;
 using System.Linq.Expressions;
 
 namespace MultiShop.Order.Persistence.Repositories
 {
-	internal class Repository<T> : IRepository<T> where T : class
+	public class Repository<T> : IRepository<T> where T : class
 	{
 		private readonly OrderContext _context;
 
