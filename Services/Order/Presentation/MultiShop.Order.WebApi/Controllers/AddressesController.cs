@@ -7,7 +7,7 @@ namespace MultiShop.Order.WebApi.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class AddresseController : ControllerBase
+	public class AddressesController : ControllerBase
 	{
 		private readonly GetAddressQueryHandler _getAddressQueryHandler;
 		private readonly GetAddressByIdQueryHandler _getAddressByIdQueryHandler;
@@ -15,7 +15,7 @@ namespace MultiShop.Order.WebApi.Controllers
 		private readonly UpdateAddressCommandHandler _updateAddressCommandHandler;
 		private readonly RemoveAddressCommandHandler _removeAddressCommandHandler;
 
-		public AddresseController(GetAddressByIdQueryHandler getAddressByIdQueryHandler, GetAddressQueryHandler getAddressQueryHandler, CreateAddressCommandHandler createAddressCommandHandler, UpdateAddressCommandHandler updateAddressCommandHandler, RemoveAddressCommandHandler removeAddressCommandHandler)
+		public AddressesController(GetAddressByIdQueryHandler getAddressByIdQueryHandler, GetAddressQueryHandler getAddressQueryHandler, CreateAddressCommandHandler createAddressCommandHandler, UpdateAddressCommandHandler updateAddressCommandHandler, RemoveAddressCommandHandler removeAddressCommandHandler)
 		{
 			_getAddressByIdQueryHandler = getAddressByIdQueryHandler;
 			_getAddressQueryHandler = getAddressQueryHandler;

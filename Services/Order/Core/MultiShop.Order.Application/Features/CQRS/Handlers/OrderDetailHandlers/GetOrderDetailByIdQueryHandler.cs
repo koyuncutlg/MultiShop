@@ -18,7 +18,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers
 			var values = await _repository.GetByIdAsync(query.Id);
 			return new GetOrderDetailByIdQueryResult
 			{
-				 OrderDetailId = values.Id,
+				 OrderDetailId = values.OrderDetailId,
 				 ProductAmount = values.ProductAmount,
 				 ProductId = values.ProductId,
 				 ProductName = values.ProductName,
