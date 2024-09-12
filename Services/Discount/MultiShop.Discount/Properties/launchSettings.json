@@ -2,13 +2,13 @@
   "profiles": {
     "MultiShop.Discount": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7098;http://localhost:5108"
+      "applicationUrl": "https://localhost:7071;"
     },
     "IIS Express": {
       "commandName": "IISExpress",
